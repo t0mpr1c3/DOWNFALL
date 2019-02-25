@@ -1,0 +1,73 @@
+   10:REM tetris. 10x20 play area
+   20MODE1
+   30VDU23;10,32;0;0;0;19,3,6;0;
+   40VDU28,14,31,25;31;5
+   50@%=9
+   60S%=0:L%=3
+   70g%=&910:s%=&404
+   80FORi=1TO20:PRINT"#"+STRING$(10," ")+"#";:NEXT:PRINTSTRING$(12,"#")
+   90:REM OISZTLJ
+  100$&404="34104222031410134304213302443024410"
+  110$&900="OISZTLJ"
+  120!&908=&1030200
+  130!&90C=&A090B08
+  140DIMo%(4),t$(7,4)
+  150m%=&40404040:J%=&781E0A04
+  160:
+  170o%(1)=-1:o%(2)=-12:o%(3)=1:o%(4)=12
+  180q%=&404:FORt%=1TO7:c%=t%?&8FF:FORd%=1TO4:t$(t%,d%)=CHR$c%:k%=0:p%=FNp(d%):!p%=0:FORi%=0TO5
+  190j%=q%?i%-48
+  200IFj%=0ANDd%=4 q%=q%+i%+1:i%=6 ELSEIFj%=0 i%=6
+  210IFj% j%=(3ANDj%-d%*(t%>1)+3)+1:k%=k%+o%(j%):IFj%<>3 t$(t%,d%)=t$(t%,d%)+CHR$(8)+CHR$(j%?&90B)
+  220IFj% t$(t%,d%)=t$(t%,d%)+CHR$c%:IFk% ?p%=k%:p%=p%+1
+  230NEXT,,
+  240:
+  250p%=g%:FORi%=0TO19:!p%=&23:p%!4=0:p%!8=&23000000:p%=p%+12:NEXT:PROCg
+  260n%=RND(7):Z%=0:PROCn
+  270:
+  280REPEAT
+  290w%=50
+  300REPEAT
+  310a%=0:b%=0:c%=0:u%=TIME:w%=50
+  320REPEAT
+  330i%=INKEY-66-INKEY-82:j%=INKEY-103-INKEY-104:k%=INKEY-1
+  340IFi% a%=i%:b%=0:c%=0 ELSEIFj% b%=j%:a%=0:c%=0 ELSEIFk% c%=k%:a%=0:b%=0
+  350f%=c%ORTIME>w%
+  360UNTILf%ORTIME>u%+10
+  370UNTILf%ORa%ORb%
+  380D%=d%:X%=x%:Y%=y%
+  390IFf% Y%=y%+1:TIME=0 ELSEIFa% D%=(d%+a%+3)MOD4+1 ELSEIFb% X%=x%+b%:IFX%<0 X%=0 ELSEIFX%>9 X%=9
+  400e%=0
+  410REPEAT
+  420p%=FNp(D%):q%=FNq(X%,Y%)
+  430FORi%=0TO3
+  440j%=FNj
+  450IFq%+j%<&910 ORq%+j%<&A00 ANDq%?j%=0 GOTO500
+  460IFY%>y% e%=e%OR1:Y%=y%:i%=4
+  470IFX%<>x% e%=e%OR2:X%=x%:i%=4
+  480IFD%<>d%ANDq%?j%=35 X%=x%+(x%>7)-(x%<5):i%=4:NEXT:UNTIL0
+  490IFD%<>d% e%=e%OR4:D%=d%:i%=4
+  500NEXT
+  510UNTIL1
+  520IFx%<>X%ORy%<>Y%ORd%<>D% PROCx(0):x%=X%:y%=Y%:d%=D%:PROCx(1)
+  530IF1ANDe% PROCf:PROCl:PROCn
+  540COLOUR1:PRINTTAB(0,27)STRING$(L%,"*")" ";:COLOUR2:COLOUR2:PRINTTAB(3,27)S%
+  550UNTILZ%
+  560L%=L%-1:PRINTTAB(L%,27)" "
+  570END
+  580:
+  590DEFFNc(d,n)=?(&90C+(3ANDn+d?&900))
+  600DEFPROCg:FORi%=0TO19:q%=FNq(0,i%):VDU31,1,5+i%:FORj%=0TO9:c%=q%?j%:C.c%MOD3+1:VDUc%-32*(c%=0):NEXT,:ENDPROC
+  610DEFPROCn:t%=n%:n%=RND(7):PROCp(1,2,t%,4,0):PROCp(1,2,n%,4,1):x%=5:y%=-1:d%=4:PROCx(1):Z%=FNk(x%,y%,d%):ENDPROC
+  620DEFPROCp(x%,y%,t%,d%,i%)COLOURi%*(t%MOD3+1):PRINTTAB(x%,y%)t$(t%,d%):ENDPROC
+  630DEFPROCx(i%):PROCp(x%+1,y%+5,t%,d%,i%):ENDPROC
+  640DEFPROCf:c%=t%?&8FF:p%=FNp(d%):q%=FNq(x%,y%):FORi%=0TO3:j%=FNj:IFq%+j%>&8FF ANDq%+j%<&A00 q%?j%=c%:NEXT:ENDPROC ELSENEXT:ENDPROC
+  650DEFFNp(d%)=&9F0+d%MOD4*4+16*t%
+  660DEFFNj:j%=p%?i%:IFj%AND&80:=-(j%EOR&FF)-1 ELSE=j%
+  670DEFFNq(x%,y%)=g%+x%+1+12*y%
+  680DEFPROCl:f%=0:FORi%=0TO19:q%=FNq(0,i%):s%?i%=1AND(!q%ANDm%)=m%AND(q%!4ANDm%)=m%AND(q%!6ANDm%)=m%:f%=f%+s%?i%:PROCh(i%,s%?i%):NEXT:IFf%=0ENDPROC
+  690S%=S%+10*s%?(f%+35):FORi%=19TO0STEP-1:IFs%?i% q%=FNq(0,i%):FORj%=i%TO1STEP-1:!q%=q%!-12:q%!4=q%!-8:q%!6=q%!-6:q%=q%-12:s%?j%=s%?j%-1:NEXT:g%!1=0:g%!5=0:g%!7=0:?s%=0
+  700NEXT:PROCg:ENDPROC
+  710DEFFNk(x%,y%,d%)p%=FNp(d%):q%=FNq(x%,y%):e%=0:FORi%=0TO3:j%=FNj:e%=e%ORq%?j%>0ANDq%+j%>&90F:NEXT:=e%
+  F.t=0TO6:F.d=0TO3:P.~!(&A00+4*d+28*t):N.:P.:N.
+  720DEFPROCh(y%,f%):IFf%=0E. EL.C.131:q%=FNq(0,i%):VDU31,1,5+i%:FORj%=0TO9:C.RND(2):c%=q%?j%:VDUc%:NEXT:C.128:E.
