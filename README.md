@@ -23,9 +23,8 @@ Simple scoring as per the [original BPS](https://tetris.wiki/Scoring), except th
 ### Variables
 
 *A%,B%,C%* user input  
-*D%* number of lines cleared  
 *E%* flag: tetromino has stopped moving in y direction  
-*F%* flag variable  
+*F%* flag, number of lines cleared  
 *G%* points scored for 1,2,3,4 lines  
 *H%* flag: end of life  
 *I%,J%* temporary index variables  
