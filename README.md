@@ -1,5 +1,8 @@
 # DOWNFALL
-Brexit-themed tetris clone.
+
+Theme
+
+Confidence is plummeting as the British economy is crashes to the ground. Exchange the falling currency before it loses all its value.
 
 Mechanics
 
