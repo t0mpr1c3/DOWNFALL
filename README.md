@@ -2,7 +2,19 @@
 
 ### Theme
 
-Confidence is plummeting as the British economy is crashes to the ground. Exchange the falling currency before it loses all its value.
+Confidence is plummeting as the British economy crashes to the ground. Exchange the falling currency before it loses all its value!
+
+### Tips
+
+DOWNFALL has no winners. But if you achieve the high score, you will learn the message of DOWNFALL.
+
+### Keys
+
+*A* rotate anticlockwise  
+*B* rotate clockwise  
+*<* move left  
+*>* move right  
+*Shift* soft drop
 
 ### Mechanics
 
