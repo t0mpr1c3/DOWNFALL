@@ -6,7 +6,9 @@ Confidence is plummeting as the British economy crashes to the ground. Exchange 
 
 ### Tips
 
-DOWNFALL has no winners. But if you achieve the high score, you will learn the message of DOWNFALL.
+DOWNFALL has no winners, only survivors. The best strategy is not to play.
+
+*May* leave *EU* worse off than before.
 
 ### Keys
 
