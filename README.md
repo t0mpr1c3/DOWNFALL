@@ -2,7 +2,7 @@
 
 ### Theme
 
-Confidence is plummeting as the British economy crashes to the ground. Exchange the falling currency before it loses all its value!
+Confidence is plummeting as the British economy crashes to the ground. Exchange the falling currency before it loses all of its value!
 
 ### Tips
 
