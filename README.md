@@ -24,21 +24,22 @@ The game has a simple scoring method rewarding multiple line clearances, similar
 
 ### Variables
 
-*A%,B%,C%* user input  
-*D%* total number of lines cleared
-*E%* flag: tetromino has stopped moving in y direction  
-*F%* flag, number of lines cleared  
-*G%* points scored for 1,2,3,4 lines  
+*A%,B%,C%* user input; temporary data stores  
+*D%* total number of lines cleared  
+*E%* flag: line 6 = tetromino has stopped moving in y direction   
+*F%* flag: line 5 = time for tetromino to move down; lines 6,8,9 = number of lines cleared in current round; line 7 = high score  
+*G%* data: points scored for 1,2,3,4 lines  
 *H%* flag: end of life  
 *I%,J%* temporary index variables  
 *K%* temporary variable  
-*L%* lives  
-*M%* mask for identifying tiles  
-*N%* index of next tetronimo  
+*L%* number of lives remaining  
+*M%* mask for identifying complete lines  
+*N%* shape of next tetronimo  
+*O%* cached pointer to tetromino data  
 *P%,Q%* temporary pointer variables  
 *R%* high score  
 *S%* game score  
-*T%* tetromino index  
+*T%* tetromino shape  
 *U%* time at last round  
 *W%* length of round in units of 0.01s governing game speed  
 *X%,x%* x location of tetromino (origin = left)  
