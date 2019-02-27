@@ -8,7 +8,7 @@ Confidence is plummeting as the British economy crashes to the ground. Exchange 
 
 DOWNFALL has no winners, only survivors. The best strategy is not to play.
 
-*May* leave *EU* worse off than before.
+You -- *MAY* -- have something to regret.
 
 ### Keys
 
