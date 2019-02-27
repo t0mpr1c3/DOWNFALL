@@ -24,8 +24,8 @@ The game has a simple scoring method rewarding multiple line clearances, similar
 
 ### Variables
 
-*A%,B%,C%* user input; temporary data stores  
-*D%* total number of lines cleared  
+*A%,B%,C%* lines 4,5 user input; lines 0,1 = temporary data store  
+*D%* lines 2,6 = total number of lines cleared; lines 0,1 = temporary data store  
 *E%* flag: line 6 = tetromino has stopped moving in y direction   
 *F%* flag: line 5 = time for tetromino to move down; lines 6,8,9 = number of lines cleared in current round; line 7 = high score  
 *G%* data: points scored for 1,2,3,4 lines  
