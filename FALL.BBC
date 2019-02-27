@@ -1,11 +1,12 @@
-10V.278;23;10,32;0;0;0;19,2,4;0;28,14,31,25;31;5:g=&911:K%=0:L%=3:m%=&20202020:P=&9F0:Q=&8FF:S%=0:s%=&404:Y=&80:$s%="34100422203141013430421332443024410":$&900="01325`4":Q!9=&1030200:Q!13=&A090B08:!&70=&C01F4FF:DIMt$(7,4):q%=&404:
-20F.t=1TO7:c=Q?t:q=s%+5*t-5:F.d=1TO4:t$(t,d)=CHR$c:k=0:p=P+d MOD4*4+16*t:!p=0:F.i=0TO5:j=q?i-48:IFj=0i=6:G.30EL.j=(3A.j-d*(t>1)+3)+1:n=j?&6F:k=k+n-n DIVY*(n-(n EOR&FF)+1):t$(t,d)=t$(t,d)+CHR$(8)+CHR$(j?&90B)+CHR$c:IFk ?p=k:p=p+1
-30N.,,:J%=&781E0A04:REP.L%=3:S%=0:L%=3:W%=50:V.12,17,2,31;5:F.i=1TO20:P."`          `";:N.:P.STRI.12,"`"):REP.p%=g-1:F.i%=0TO19:!p%=&23:p%!4=0:p%!8=0:p%?11=&23:p%=p%+12:N.:Z%=0:N%=RND(7):TI.=0:REP.F.i%=0TO19:q%=g+12*i%:V.31,1,5+i%
-40F.j%=0TO9:c%=q%?j%:C.c%MOD3+1:V.c%-32*(c%=0):N.,:REP.T%=N%:N%=RND(7):C.0:P.TAB(1,2)t$(T%,4):C.Q?N%MOD3+1:P.TAB(1,2)t$(N%,4):x%=5:y%=-1:d%=4:C.Q?T%MOD3+1:P.TAB(x%+1,y%+5)t$(T%,d%):p%=P+d%MOD4*4+16*T%:q%=g+x%+12*y%:Z%=0:F.i%=0TO3
-50n%=p%?i%:j%=n%-n%DIVY*(n%-(n%EOR&FF)+1):Z%=Z%ORq%?j%>0A.q%+j%>&90F:N.:REP.a%=0:b%=0:c%=0:u%=TI.:REP.i%=INKEY-66-INKEY-82:j%=INKEY-103-INKEY-104:k%=INKEY-1:IFi% a%=i%:b%=0:c%=0 EL.IFj% b%=j%:a%=0:c%=0 EL.IFk% c%=k%:a%=0:b%=0
-60f%=c%ORTI.>W%:U.f%ORTI.>u%+10:U.f%ORa%ORb%:D%=d%:X%=x%:Y%=y%:IFf%Y%=y%+1:TI.=0EL.IFa%D%=(d%+a%+3)MOD4+1EL.IFb%X%=x%+b%:IFX%<0X%=0EL.IFX%>9X%=9
-70e=0:REP.p%=P+D%MOD4*4+16*T%:q%=g+X%+12*Y%:F.i%=0TO3:n%=p%?i%:j%=n%-n%DIVY*(n%-(n%EOR&FF)+1):IFg-1>q%+j%OR&A00>q%+j%A.q%?j%=0G.80EL.IFY%>y%e=1:Y%=y%:i%=4EL.IFX%<>x%X%=x%:i%=4EL.IFD%<>d%A.q%?j%=35X%=x%+SGN(x%-6):i%=4:N.:U.0
-80N.:U.1:C.0:P.TAB(x%+1,y%+5)t$(T%,d%):x%=X%:y%=Y%:d%=D%:C.Q?T%MOD3+1:P.TAB(x%+1,y%+5)t$(T%,d%):IFe=0G.110EL.c%=Q?T%:p%=P+d%MOD4*4+16*T%:q%=g+x%+12*y%:F.i%=0TO3:n%=p%?i%:j%=n%-n%DIVY*(n%-(n%EOR&FF)+1):IFQ>q%+j%A.&A00>q%+j%q%?j%=c%:N.EL.N.
-90f%=0:FORi%=0TO19:q%=g+12*i%:s%?i%=1A.(!q%A.m%)=m%A.(q%!4A.m%)=m%A.(q%!6A.m%)=m%:f%=f%+s%?i%:IFs%?i%=0N.EL.q%=g+12*i%:V.17,131,31,1,5+i%:F.j%=0TO9:C.RND(2):c%=q%?j%:V.c%:N.:C.128:N.
-100IFf%=0G.110EL.S%=S%+10*s%?(f%+35):F.i%=19TO0S.-1:IFs%?i% q%=g+12*i%:F.j%=i%TO1S.-1:!q%=q%!-12:q%!4=q%!-8:q%!6=q%!-6:q%=q%-12:s%?j%=s%?j%-1:N.:!g=0:g!4=0:g!8=0:?s%=0:N.:U.1:U.0
-110C.1:P.TAB(0,27)STRI.L%,"*")" ";:C.3:@%=6:P.TAB(5,27)"$"S%:U.Z%:U.1:U.1:L%=L%-1:P.TAB(L%,27)" ":TI.=0:REP.:U.TI.>99:U.L%=0:IFS%>K%K%=S%:P.TAB(2,15)"HI SCORE":U.0EL.U.0
+0d=31:V.278;23;8202;0;0;0;531;4;0;3612;d,25;:@%=6:a$=STRI.10," "):b=12:c=32:g=&911:p=&A00:q=&900:r=&404:R%=0:y=&80:$r="14300311103141013430421333114013340":$q="01325`4_132231":!&70=&180D000B:!&74=&A090B08:DIMt$(7,3):F.T%=0TO6:N%=q?T%:
+1Q%=r+5*T%:F.Z%=0TO3:t$(T%,Z%)=a$:t$(T%,Z%)=CHR$N%:K%=0:P%=p+4*Z%+16*T%:!P%=c:P%=P%+1:F.Y%=0TO4:J%=Q%?Y%:IFJ%=48Y%=6:G.2EL.J%=3A.(J%-(T%>0)*Z%+3):K%=K%+J%?&70-b:t$(T%,Z%)=t$(T%,Z%)+CHR$8+CHR$J%?&74+CHR$N%:IFK% ?P%=K%+c:P%=P%+1
+2N.,,:G%=&781E0A04:REP.L%=3:S%=0:D%=0:W%=80:V.b,d;5:F.I%=0TO19:C.q?(.6*I%MOD6+8):P."`"a$"`";:N.:F.I%=0TO11:C.q?(I%MOD6+8):V.96:N.:REP.P%=g-1:F.I%=0TO19:!P%=35:P%!4=0:P%!8=35*8^8:P%=P%+b:N.:P.TAB(1,3)a$'a$:REP.F.I%=0TO19:Q%=g+b*I%:V.d,1,5+I%:
+3F.J%=0TO9:K%=Q%?J%:C.K%MOD3+1:V.K%-c*(K%=0):N.,:C.1:V.d;27:P.STRI.L%,"*")" ":H%=0:N%=RND(7)-1:U%=0:TI.=0:REP.T%=N%:N%=RND(7)-1:C.0:P.TAB(6,1)t$(T%,0):C.q?N%MOD3+1:P.TAB(6,1)t$(N%,0):X%=5:Y%=-1:Z%=0:C.q?T%MOD3+1:P.TAB(6,4)t$(T%,0):C.3:
+4V.d,5,27,36:P.S%:P%=p+4*Z%+16*T%:Q%=g+X%+b*Y%:F.I%=0TO3:J%=Q%+P%?I%-c:H%=H%OR?J%>0A.J%>g-2:N.:REP.A%=0:B%=0:C%=0:REP.I%=INKEY-66-INKEY-82:J%=INKEY-103-INKEY-104:K%=INKEY-74:IFI%A%=I%:B%=0:C%=0EL.IFJ%B%=J%:A%=0:C%=0EL.IFK%C%=K%:A%=0:B%=0
+5F%=C%<>0ORTI.>W%:U.F%ORTI.>U%+5:U%=TI.:y%=Y%-F%:U%=U%*(1+F%)*U%:TI.=U%:A%=(1+F%)*A%:z%=(Z%+A%+4)MOD4:x%=X%-(1+F%)*(A%=0)*B%:REP.E%=0:P%=p+4*z%+16*T%:Q%=g+x%+b*y%:F.I%=0TO3:J%=Q%+P%?I%-c:E%=E%ORp<=J%ORg<J%A.?J%>0:N.:F%=E%A.z%<>Z%A.?J%=35:
+6x%=x%+(E%A.F%=0)*(x%-X%)+F%*SGN(X%-6):z%=z%+(E%A.F%=0)*(z%-Z%):E%=E%A.y%<>Y%:y%=y%+E%*(y%-Y%):U.F%=0:C.0:P.TAB(X%+1,Y%+5)t$(T%,Z%):X%=x%:Y%=y%:Z%=z%:C.q?T%MOD3+1:P.TAB(X%+1,Y%+5)t$(T%,Z%):IFE%=0U.H%EL.GOS.9:D%=D%+F%:IFK%>0W%=W%-1:G.10EL.U.1
+8P.TAB(0,28)X%,Y%,Z%,T%,E%:U.H%:U.1:L%=L%-1:V.d,L%,27,c:SO.0,-9,2,2:TI.=0:REP.:U.TI.>99:U.L%=0:$p="DOWNFALL":$&909="HI SCORE":F%=S%>R%:R%=R%+F%*(R%-S%):C.3:P.TAB(1,14)a$TAB(1,15)" "$(p-9*F%)" "TAB(1,16)a$:TI.=0:REP.U.TI.>r:U.0EL.U.0
+9M%=&20202020:K%=q?T%:P%=p+4*Z%+16*T%:Q%=g+X%+b*Y%:F.I%=0TO3:J%=Q%+P%?I%-c:F%=p>J%A.J%>=g:?J%=?J%+F%*(?J%-K%):N.:F%=0:K%=-1:F.I%=Y%-2TOY%+2:Q%=g+b*I%:r?I%=1A.(!Q%A.M%)=M%A.(Q%!4A.M%)=M%A.(Q%!6A.M%)=M%:F%=F%+r?I%:K%=K%-r?I%*(K%-I%):N.:R.
+10S%=S%+10*F%?&417:SO.0,-9,0,1:C.131:Q%=g+b*K%:P%=Q%:F.I%=K%TOK%-F%+1S.-1:V.d,1,5+I%:F.J%=0TO9:C.RND(2):V.Q%?J%:N.:Q%=Q%-b:N.:C.y:F.I%=F%TOK%:!P%=!Q%:P%!4=Q%!4:P%!6=Q%!6:P%=P%-b:Q%=Q%-b:N.:F.I%=g TOP%S.b:!I%=0:I%!4=0:I%!6=0:N.:U.1:U.1:U.0
+11:
+100DEFPROCg:F.I%=0TO19:Q%=g+b*I%-1:V.d;5+I%:F.J%=0TO11:K%=Q%?J%:C.K%MOD3+1:V.K%-c*(K%=0):N.,:E.
