@@ -42,6 +42,7 @@ The game has a simple scoring method rewarding multiple line clearances, similar
 *T%* tetromino shape  
 *U%* time at last round  
 *W%* length of round in units of 0.01s governing game speed  
+*V%* length of delay before restarting game  
 *X%,x%* x location of tetromino (origin = left)  
 *Y%,y%* y location of tetromino (origin = top)  
 *Z%,z%* orientation of tetromino (start = 0)  
