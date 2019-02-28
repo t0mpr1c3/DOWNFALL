@@ -2,13 +2,13 @@
 
 ### Theme
 
-Confidence is plummeting as the British economy crashes to the ground. Exchange the falling currency before it loses all of its value!
+Confidence is plummeting as the British economy crashes to the ground. The situation demands grit and resolve: the national currency is falling through the floor, and although you hate the idea of it, you must exchange all of your money before it loses its value altogether. Successful play is rewarded with a patriotic anthem.
 
 ### Tips
 
 DOWNFALL has no winners, only survivors. The best strategy is not to play.
 
-You -- *MAY* -- have something to regret.
+Gambling with the future of the country something that you *May* regret.
 
 ### Keys
 
