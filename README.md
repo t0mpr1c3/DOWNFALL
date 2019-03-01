@@ -16,7 +16,7 @@ Gambling with the future of the country something that you *May* regret.
 *C* rotate clockwise  
 *<* move left  
 *>* move right  
-*Return* soft drop
+*Space* soft drop
 
 ### Mechanics
 
@@ -28,14 +28,14 @@ The game has a simple scoring method rewarding multiple line clearances, similar
 *D%* lines 2,6 = total number of lines cleared; lines 0,1 = temporary data store  
 *E%* flag: line 6 = tetromino has stopped moving in y direction   
 *F%* flag: line 5 = time for tetromino to move down; lines 6,8,9 = number of lines cleared in current round  
-*G%* data: points scored for 1,2,3,4 lines  
+*G%* cached pointer to tetromino data  
 *H%* flag: end of life  
 *I%,J%* temporary index variables  
 *K%* temporary variable  
 *L%* number of lives remaining  
 *M%* mask for identifying complete lines  
 *N%* shape of next tetronimo  
-*O%* cached pointer to tetromino data  
+*O%* data: points scored for 1,2,3,4 lines  
 *P%,Q%* temporary pointer variables  
 *R%* high score  
 *S%* game score  
