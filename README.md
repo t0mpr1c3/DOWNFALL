@@ -12,9 +12,9 @@ Confidence is plummeting as the British economy crashes to the ground. The situa
 
 ## How to play
 
-Download FALL256.zip from the [github repo](https://github.com/t0mpr1c3/DOWNFALL) and extract the virtual disk `FALL256.ssd`. Upload the file into *jsbeeb*, or an offline emulator such as [BeebEm](https://en.wikipedia.org/wiki/BeebEm), and type `CHAIN "FALL256"`. 
+Download FALL256.zip from the [github repo](https://github.com/t0mpr1c3/DOWNFALL) and extract the virtual disk FALL256.ssd. Upload the file into *jsbeeb*, or an offline emulator such as [BeebEm](https://en.wikipedia.org/wiki/BeebEm), and type `CHAIN "FALL256"`. 
 
-(Note that *jsbeeb* has a funky keyboard mapping: on my US keyboard I got the double quote by typing `SHIFT-2`.)
+(Note that *jsbeeb* has a strange keyboard mapping: on my US keyboard I got the double quote by typing `SHIFT-2`.)
 
 Alternatively, copy/paste the BASIC code into the console of *BeebEm* and type `RUN`.
 
