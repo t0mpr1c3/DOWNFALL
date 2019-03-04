@@ -12,7 +12,7 @@ Confidence is plummeting as the British economy crashes to the ground. The situa
 
 ### Tips
 
-`DOWNFALL` has no winners, only survivors. The best strategy is not to play.
+`DOWNFALL` has no winners, only survivors. The best strategy is not to play. ;)
 
 Gambling with the future of the country something that you *May* regret.
 
