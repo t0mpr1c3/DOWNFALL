@@ -1,20 +1,22 @@
 # DOWNFALL
 
-### Purpose
+## Purpose
 
 * This is a [Tetris](https://tetris.wiki/) clone written for the javascript BBC micro model B emulator, [jsbeeb](https://bbc.godbolt.org/).
 
 * It was written as an entry for the [2019 BASIC 10 liner contest](http://gkanold.wixsite.com/homeputerium/kopie-von-basic-10liners-2019) in category EXTREME-256. The rules state that none of the lines of code should exceed 256 characters: BBC BASIC limits lines to 239 characters.
 
-### Theme
+## Theme
 
 Confidence is plummeting as the British economy crashes to the ground. The situation demands grit and resolve: the national currency is falling through the floor, and although you hate the idea of it, you must exchange all of your money before it loses its value altogether. Successful play is rewarded with a patriotic anthem.
 
-### Tips
+## How to play
 
-`DOWNFALL` has no winners, only survivors. The best strategy is not to play. ;)
+Download FALL256.zip from the [github repo](https://github.com/t0mpr1c3/DOWNFALL) and extract the virtual disk `FALL256.ssd`. Upload the file into *jsbeeb*, or an offline emulator such as [BeebEm](https://en.wikipedia.org/wiki/BeebEm), and type `CHAIN "FALL256"`. 
 
-Gambling with the future of the country something that you *May* regret.
+(Note that *jsbeeb* has a funky keyboard mapping: on my US keyboard I got the double quote by typing `SHIFT-2`.)
+
+Alternatively, copy/paste the BASIC code into the console of *BeebEm* and type `RUN`.
 
 ### Keys
 
@@ -24,7 +26,13 @@ Gambling with the future of the country something that you *May* regret.
 *>* move right  
 *Space* drop piece
 
-### Mechanics
+### Tips
+
+`DOWNFALL` has no winners, only survivors. The best strategy is not to play. ;)
+
+Gambling with the future of the country something that you *May* regret.
+
+## Mechanics
 
 The game has a simple scoring method rewarding multiple line clearances, [similar to the original](https://tetris.wiki/Scoring) but without bonus points for using the hard drop. A rotation system is implemented in which the *O* piece (square) does not change, but every other tetromino has 4 different positions rotated around one of its component squares. Other features include single piece preview, wall kicks, and a fixed lock delay. Every time 10 lines are cleared, the speed increases by 25%.
 
