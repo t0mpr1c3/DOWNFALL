@@ -36,7 +36,7 @@ The game has a simple scoring method rewarding multiple line clearances, [simila
 
 *Line 1:*  
 * Initialize the screen.  
-* Create array of pieces t$(T%,Z%) where T% is the tile shape and Z% is its orientation.  
+* Create array of pieces `t$(T%,Z%)` where `T%` is the tile shape and `Z%` is its orientation.  
 * Store the piece data in locations following address `p=&A00`.
 
 *Line 2:*  
@@ -75,7 +75,7 @@ The game has a simple scoring method rewarding multiple line clearances, [simila
 
 ### Variables
 
-The built-in integer variables A%-Z% are heavily used to optimimze performance.
+The built-in integer variables `A%`-`Z%` are heavily used to optimimze performance.
 
 `A%,B%,C%` lines 4,5 user input 
 `D%*` lines 2,6 = total number of lines cleared  
