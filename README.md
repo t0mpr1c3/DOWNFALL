@@ -30,44 +30,44 @@ The game has a simple scoring method rewarding multiple line clearances, [simila
 
 ### Code summary
 
-*Line 0:*  
+#### Line 0:  
 * Initialize variables and store data.  
 * `*TV 253` shifts the screen down 3 lines to hide on-screen memory glitches in the emulator.  
 
-*Line 1:*  
+#### Line 1:  
 * Initialize the screen.  
 * Create array of pieces `t$(T%,Z%)` where `T%` is the tile shape and `Z%` is its orientation.  
 * Store the piece data in locations following address `p=&A00`.
 
-*Line 2:*  
+#### Line 2:  
 * Set up the game screen and print a welcome message.  
 
-*Line 3:*  
+#### Line 3:  
 * Emit a hideously mangled snippet of the British national anthem.  
 * Begin the game loop.  
 
-*Line 4:*  
+#### Line 4:  
 * Clear the game data.  
 * Refresh the game screen.  
 * Create the next tile and print it at the top of the screen.  
 
-*Line 5:*  
+#### Line 5:  
 * Find out if the newly-dropped tile is on top of existing tiles, and set `R%` accordingly.  
 * Obtain user input.  
 
-*Line 6:*  
+#### Line 6:  
 * Check whether any move is possible, and go to line 9 if so.  
 * Kick wall if necessary.  
 
-*Line 7:*  
+#### Line 7:  
 * Return to user input unless `F%` is set, indicating that the piece has stopped falling.  
 * Count the number of completed lines and store in `F%`.  
 
-*Line 8:*  
+#### Line 8:  
 * Update the total number of lines cleared `D%`, the score `S%`, and round delay `W%`.  
 * Print the score, highlight lines about to be cleared, then update the game data and screen.  
 
-*Line 9:*  
+#### Line 9:  
 * Move the piece.  
 * Return to user input unless `R%` is set, indicating loss of life.  
 * Update number of lives and restart game unless no lives left.  
